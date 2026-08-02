@@ -11,6 +11,7 @@ This project focuses on building a scalable big data platform for a global logis
 
 1. docker build -t telemetry-spark-env .
 ```text
+(base) somyajaiswal@somyas-MacBook-Air telemetry-platform % docker build -t telemetry-spark-env .
 [+] Building 179.3s (12/12) FINISHED                                                                        docker:desktop-linux
  => [internal] load build definition from Dockerfile                                                                        0.0s
  => => transferring dockerfile: 749B                                                                                        0.0s
@@ -42,11 +43,12 @@ This project focuses on building a scalable big data platform for a global logis
  => => exporting attestation manifest sha256:f72eee782a9eacf1ab657d4d4f68094759a7b5408ce4d0973f15db7d3235c790               0.0s 
  => => exporting manifest list sha256:e578dd966961850d562d8d628e3728501b776cb32052bb0bd0e70eec3be8603b                      0.0s
  => => naming to docker.io/library/telemetry-spark-env:latest                                                               0.0s
- => => unpacking to docker.io/library/telemetry-spark-env:latest  
+ => => unpacking to docker.io/library/telemetry-spark-env:latest
 ```
 
 2. docker run -it -v "$(pwd):/app" telemetry-spark-env
 ```text 
+(base) somyajaiswal@somyas-MacBook-Air telemetry-platform % docker run -it -v "$(pwd):/app" telemetry-spark-env
 root@819c60c13514:/app#
 ```
 
